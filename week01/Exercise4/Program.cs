@@ -1,24 +1,21 @@
 using System;
+using System.Globalization;
 using System.Runtime.CompilerServices;
+using System.Transactions;
 // using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        List<string> words = new List<string>();
-
-        words.Add("Phone");
-        words.Add("Keyboard");
-        words.Add("Mouse");
-
-        Console.WriteLine(words.Count);
-
-        foreach (string word in words)
+        List<int> numbers  = new List<int>();
+        
+        int number = -1;
+        Console.WriteLine("Enter a list of numbers, type 0 when finished");
+        while (number != 0)
         {
-            Console.WriteLine(word);
+            Console.Write("Enter a number: ");
+            number = int.Parse(Console.ReadLine());
         }
-
-
     }
 }
