@@ -17,12 +17,19 @@ class Program
         {
             Console.Write("Enter a number: ");
             number = int.Parse(Console.ReadLine());
-            numbers.Add(number);
+            
+
+            if (number != 0)
+            {
+                numbers.Add(number);
+            }
         }
 
+        int total = 0;
         foreach (int num in numbers)
         {
-            Console.WriteLine(num);
+            total += num;
         }
+        Console.WriteLine($"The sum is: {total}");
     }
 }
