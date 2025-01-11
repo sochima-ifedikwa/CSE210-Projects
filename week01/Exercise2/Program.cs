@@ -31,7 +31,7 @@ class Program
             letter = "F";
         }
 
-        Console.WriteLine($"Your grade is {letter}.");
+        // Console.WriteLine($"Your grade is {letter}.");
 
         if (grade >= 70)
         {
@@ -42,10 +42,12 @@ class Program
             Console.WriteLine("Try again next time.");
         }
 
-        // This is the strectch challenge to the exercise
+        // This is the stretch challenge to the exercise
         string gradeSign  = "";
 
-        int lastDigit  = grade % 10;
+        int lastDigit; 
+        lastDigit = grade % 10;
+
         if (lastDigit >= 7)
         {
             gradeSign = "+";
@@ -54,5 +56,20 @@ class Program
         {
             gradeSign = "-";
         }
+        else
+        {
+            gradeSign = "";
+        }
+
+        if (grade >= 93)
+        {
+            gradeSign = "";
+        }
+        if (letter == "F")
+        {
+            gradeSign = "";    
+        }
+
+        Console.WriteLine($"Your grade is {letter}{gradeSign}.");
     }
 }
