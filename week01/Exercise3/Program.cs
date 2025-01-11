@@ -6,11 +6,9 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("What is the magic number? ");
-        string input = Console.ReadLine();
-        int magicNumber  = int.Parse(input);
+        int magicNumber  = int.Parse(Console.ReadLine());
         Console.Write("What is your guess? ");
-        string guess = Console.ReadLine();
-        int guessNumber = int.Parse(guess);
+        int guessNumber = int.Parse(Console.ReadLine());
 
         
         
