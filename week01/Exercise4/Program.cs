@@ -31,5 +31,20 @@ class Program
             total += num;
         }
         Console.WriteLine($"The sum is: {total}");
+
+
+        float average = total / (float)numbers.Count;
+        Console.WriteLine($"The average is: {average}");
+
+        int maximum = numbers[0];
+
+        for (int i = 1; i < numbers.Count; i++)
+        {
+            if (numbers[i] > maximum)
+            {
+                maximum = numbers[i];
+            }
+        }
+        Console.WriteLine($"The largest number is {maximum}");
     }
 }
