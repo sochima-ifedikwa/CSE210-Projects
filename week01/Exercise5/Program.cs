@@ -11,7 +11,7 @@ class Program
 
         int squaredNumber = SquareNumber(userNumber);
 
-        DisplayResult(userName, userNumber);
+        DisplayResult(userName, squaredNumber);
 
 
     }
@@ -31,7 +31,7 @@ class Program
 
     static int PromptUserNumber()
     {
-        Console.WriteLine("What is your favorite number: ");
+        Console.Write("What is your favorite number: ");
         int userNumber  = int.Parse(Console.ReadLine());
 
         return userNumber;
