@@ -20,5 +20,20 @@ class Program
         return userName;
     }
 
-    static int PromptUsernumber()
+    static int PromptUserNumber()
+    {
+        Console.WriteLine("What is your favorite number? ");
+        int userNumber  = int.Parse(Console.ReadLine());
+
+        return userNumber;
+    }
+
+    static int SquareNumber(int number)
+    {
+        Console.Write("What is your number: ");
+        number  = int.Parse(Console.ReadLine());
+
+        int numberSquared  = number * number;
+        return numberSquared;
+    }
 }
