@@ -41,5 +41,18 @@ class Program
         {
             Console.WriteLine("Try again next time.");
         }
+
+        // This is the strectch challenge to the exercise
+        string gradeSign  = "";
+
+        int lastDigit  = grade % 10;
+        if (lastDigit >= 7)
+        {
+            gradeSign = "+";
+        }
+        else if (lastDigit <= 3)
+        {
+            gradeSign = "-";
+        }
     }
 }
