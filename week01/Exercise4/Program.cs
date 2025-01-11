@@ -1,9 +1,24 @@
 using System;
+using System.Runtime.CompilerServices;
+// using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise4 Project.");
+        List<string> words = new List<string>();
+
+        words.Add("Phone");
+        words.Add("Keyboard");
+        words.Add("Mouse");
+
+        Console.WriteLine(words.Count);
+
+        foreach (string word in words)
+        {
+            Console.WriteLine(word);
+        }
+
+
     }
 }
