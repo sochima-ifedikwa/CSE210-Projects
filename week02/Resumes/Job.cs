@@ -6,11 +6,6 @@ public class Job
     public int _startYear = -1;
     public int _endYear = -1;
 
-    // A Constructor is made for the Job class
-    public Job()
-    {
-    }
-
     // member methods (functions)
     public void Display()
     {
