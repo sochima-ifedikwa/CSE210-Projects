@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
+
+        Journal theJournal = new Journal(); // Create a new instance of the Journal class
+        Entry anEntry = new Entry(); // Create a new instance of the Entry class
+        
+
         Console.WriteLine("Welcome to the program!");
         Console.WriteLine("Please select the following choices");
         int choice = -1;
@@ -18,9 +23,19 @@ class Program
             choice = int.Parse(Console.ReadLine());
             if (choice == 1)
             {
-                Console.WriteLine("Enter a word: ");
-                string word = Console.ReadLine();
-                Console.WriteLine("You entered: " + word);
+                theJournal.AddEntry();
+            }
+            else if (choice == 2)
+            {
+                theJournal.DisplayAll();
+            }
+            else if (choice == 3)
+            {
+                theJournal.LoadFromFile();
+            }
+            else if (choice == 4)
+            {
+                theJournal.SaveTofile();
             }
         }
 
