@@ -12,7 +12,7 @@ public class Journal
     }
     public void DisplayAll()
     {
-        foreach (var entry in _entries)
+        foreach (Entry entry in _entries)
         {
             entry.Display();
         }
@@ -20,9 +20,7 @@ public class Journal
 
     public void SaveTofile(string file)
     {
-        Console.Write("What is the filename?");
-        string filename = Console.ReadLine();
-
+    
         using (StreamWriter writer = new StreamWriter(file))
         {
             foreach (Entry entry in _entries)
