@@ -24,7 +24,7 @@ public class Word {
     }
     public string GetDisplayText()
     {
-        return _isHidden ? new str;
+        return _isHidden ? new string('_', _text.Length) : _text;
     }
 
     public string GetText()
