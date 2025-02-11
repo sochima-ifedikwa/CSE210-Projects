@@ -43,8 +43,8 @@ class Program
 
             foreach (var comment in video._listOfComments) 
             {
-                Console.WriteLine("Comments in the video are :");
-                Console.WriteLine($"Comment by {comment.GetCommenter} : {comment.GetTextComment}");
+                Console.WriteLine("Comments:");
+                Console.WriteLine($"{comment._commenter} : {comment._textComment}");
             }
         }
 
