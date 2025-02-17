@@ -20,7 +20,7 @@ public class ReflectingActivity : Activity
 
         Console.WriteLine("When you have something in mind, press enter to continue.");
         Console.ReadLine();
-        Console.WriteLine("Now ponder on each of the following as they related to this experience");
+        Console.WriteLine("Now ponder on each of the following as they are related to this experience");
         Console.Write("You may begin in:");
         ShowCountDown(3);
         int elapsed = 0;
