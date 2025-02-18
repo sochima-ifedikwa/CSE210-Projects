@@ -23,7 +23,7 @@ class Program
 
         foreach(Shape shape in shapes)
         {
-            Console.WriteLine($"The {shape.GetColor()} color has an Area of{shape.GetArea()}");
+            Console.WriteLine($"The {shape.GetColor()} color has an Area of {shape.GetArea()}");
         }
 
     }
