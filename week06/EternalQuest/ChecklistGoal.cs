@@ -2,10 +2,10 @@ public class ChecklistGoal : Goal
 {
     private int _amountCompleted;
     private int _target;
-    private string _bonus;
+    private int _bonus;
 
 
-    public ChecklistGoal(string name, string description, string points, int target, string bonus) : base(name, description, points)
+    public ChecklistGoal(string name, string description, int points, int target, int bonus) : base(name, description, points)
     {
         _target = target;
         _bonus = bonus;
@@ -14,7 +14,17 @@ public class ChecklistGoal : Goal
 
     public override void RecordEvent()
     {
-        
+        _amountCompleted++;
+
+        if (IsComplete())
+        {
+            Console.WriteLine($"Congratulations! You have earned {_points + _bonus} points!");
+
+        }
+        else
+        {
+            Console.WriteLine($"Good Job! You made progress on '{_shortName}'. ({_amountCompleted}/{_target} Completed)");
+        }
     }
 
     public override bool IsComplete()
